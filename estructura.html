@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portfolio</title>
+
+  <!-- Fuente Google y CSS propio -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Librería AOS para animaciones al hacer scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1 data-aos="fade-down">¡Hola! Soy <span class="resaltado">Tu Nombre</span></h1>
+    <p data-aos="fade-up" data-aos-delay="150">Diseñador/a &nbsp;|&nbsp; 3D &nbsp;|&nbsp; Creativo/a</p>
+    <a class="btn" href="#trabajos" data-aos="zoom-in" data-aos-delay="300">Ver trabajos</a>
+  </header>
+
+  <!-- Sección de proyectos -->
+  <section id="trabajos" class="galeria">
+    <article class="card" data-aos="flip-left">
+      <img src="img/muestra1.jpg" alt="Proyecto 1" />
+      <h2>Proyecto 1</h2>
+      <p>Descripción breve de lo que hiciste.</p>
+    </article>
+
+    <article class="card" data-aos="flip-left" data-aos-delay="100">
+      <img src="img/muestra2.jpg" alt="Proyecto 2" />
+      <h2>Proyecto 2</h2>
+      <p>Un poquito de info interesante.</p>
+    </article>
+
+    <!-- Podés clonar más <article> para más trabajos -->
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© <span id="anio"></span>  Tu Nombre • Hecho con amor guaraní ❤️</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
